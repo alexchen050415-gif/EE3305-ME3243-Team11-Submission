@@ -1,0 +1,3 @@
+variant,status,elapsed_s,distance_m,goal_error_m,min_clearance_m,csv
+Original,near_goal_stopped,30.0,6.007,0.1,0.232,Original_20261026_202310_594133.csv
+Improved,reached,28.4,5.569,0.08,0.12,Improved_20261026_202318_038958.csv

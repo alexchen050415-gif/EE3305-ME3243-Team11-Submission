@@ -1,0 +1,35 @@
+behavior:
+  ros__parameters:
+    frequency: 10.0 # {double} [Hz]
+    plan_frequency: 2.0 # {double} [Hz]
+
+controller:
+  ros__parameters:
+    frequency: 20.0 # {double} [Hz]
+    lookahead_distance: 0.1 # {double} [m]
+    lookahead_lin_vel: 0.22 # {double} [m/s]
+    stop_thres: 0.1 # {double} [m]
+    max_lin_vel: 0.22 # {double} [m/s]
+    max_ang_vel: 2.84 # {double} [rad/s]
+    #原始固定PurePursuit不变，只在初始航向相差很大时先原地对齐
+    heading_alignment_enabled: true
+    heading_enter_angle: 1.35 # {double} [rad]
+    heading_exit_angle: 0.25 # {double} [rad]
+    heading_turn_gain: 2.0 # {double} [1/s]
+    heading_turn_max: 1.0 # {double} [rad/s]
+    #仅限制角速度指令每秒的变化量，不做动态Lookahead或速度搜索
+    angular_rate_limit_enabled: true
+    angular_acceleration: 12.0 # {double} [rad/s^2]
+
+planner:
+  ros__parameters:
+    max_access_cost: 90 # {int} []
+    #默认启用规划优化，false时走原来的Dijkstra路径
+    path_optimization_enabled: true
+    #安全检查预留的障碍物边界距离，单位米
+    path_min_clearance: 0.06
+    path_sample_step: 0.05
+    path_smooth_iterations: 18
+    path_time_turn_weight: 0.28
+    path_time_clearance_weight: 0.12
+    path_switch_gain: 0.03

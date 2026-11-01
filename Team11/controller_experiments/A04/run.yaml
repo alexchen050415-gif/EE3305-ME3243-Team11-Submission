@@ -1,0 +1,17 @@
+behavior:
+  ros__parameters:
+    frequency: 10.0
+    plan_frequency: 2.0
+
+controller:
+  ros__parameters:
+    frequency: 20.0
+    lookahead_distance: 0.20
+    lookahead_lin_vel: 0.40
+    stop_thres: 0.1
+    max_lin_vel: 0.40
+    max_ang_vel: 2.0
+
+planner:
+  ros__parameters:
+    max_access_cost: 90

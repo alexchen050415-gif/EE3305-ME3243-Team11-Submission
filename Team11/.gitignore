@@ -1,0 +1,8 @@
+Original/build/
+Original/install/
+Original/log/
+Improved/build/
+Improved/install/
+Improved/log/
+**/__pycache__/
+*.py[cod]

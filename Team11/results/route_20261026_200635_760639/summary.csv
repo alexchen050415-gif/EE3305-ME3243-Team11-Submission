@@ -1,0 +1,2 @@
+variant,status,elapsed_s,distance_m,goal_error_m,min_clearance_m,csv
+Improved,reached,20.96,4.449,0.08,0.132,Improved_20261026_200635_764996.csv
